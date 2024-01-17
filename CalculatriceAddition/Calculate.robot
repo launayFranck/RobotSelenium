@@ -20,6 +20,6 @@ Perform Calculation
     ${cinq}    Get Text    xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[2]/span[2]
     Should Be Equal As Strings    ${cinq}    5
     Click Element    xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[5]/span[4]
-    ${result}    Get Text    xpath://*[@id="sciOutPut"] 
-    Should Be Equal As Strings    ${result}  8
+    ${huit}    Get Text    xpath://*[@id="sciOutPut"] 
+    Should Be Equal As Integers    ${huit}   8
     Close Browser
