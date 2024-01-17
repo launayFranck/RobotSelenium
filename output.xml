@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.12.1 on win32)" generated="20240117 15:42:32.801" rpa="false">
+<suite id="s1" name="RobotSelenium" source="C:\Users\launa\git\RobotSelenium">
+<suite id="s1-s1" name="CalculatriceAddition" source="C:\Users\launa\git\RobotSelenium\CalculatriceAddition">
+<suite id="s1-s1-s1" name="Calculate" source="C:\Users\launa\git\RobotSelenium\CalculatriceAddition\Calculate.robot">
+<test id="s1-s1-s1-t1" name="Perform Calculation">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20240117 15:42:33.011" level="INFO">Opening browser 'chrome' to base url 'http://www.calculator.net/'.</msg>
+<status status="PASS" starttime="20240117 15:42:33.010" endtime="20240117 15:42:35.651"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240117 15:42:35.652" endtime="20240117 15:42:35.783"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="sciOutPut"]</arg>
+</arguments>
+<msg timestamp="20240117 15:42:35.784" level="INFO">Clicking element 'xpath://*[@id="sciOutPut"]'.</msg>
+<status status="PASS" starttime="20240117 15:42:35.783" endtime="20240117 15:42:35.970"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="sciOutPut"]</arg>
+</arguments>
+<assign>
+<var>${zero}</var>
+</assign>
+<msg timestamp="20240117 15:42:35.998" level="INFO">${zero} = 0</msg>
+<status status="PASS" starttime="20240117 15:42:35.970" endtime="20240117 15:42:35.998"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${zero}</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20240117 15:42:35.998" endtime="20240117 15:42:35.999"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[3]/span[3]</arg>
+</arguments>
+<msg timestamp="20240117 15:42:35.999" level="INFO">Clicking element 'xpath://html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[3]/span[3]'.</msg>
+<status status="PASS" starttime="20240117 15:42:35.999" endtime="20240117 15:42:36.042"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[3]/span[3]</arg>
+</arguments>
+<assign>
+<var>${trois}</var>
+</assign>
+<msg timestamp="20240117 15:42:36.061" level="INFO">${trois} = 3</msg>
+<status status="PASS" starttime="20240117 15:42:36.043" endtime="20240117 15:42:36.061"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${trois}</arg>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20240117 15:42:36.061" endtime="20240117 15:42:36.062"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[1]/span[4]</arg>
+</arguments>
+<msg timestamp="20240117 15:42:36.063" level="INFO">Clicking element 'xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[1]/span[4]'.</msg>
+<status status="PASS" starttime="20240117 15:42:36.062" endtime="20240117 15:42:36.106"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[2]/span[2]</arg>
+</arguments>
+<msg timestamp="20240117 15:42:36.106" level="INFO">Clicking element 'xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[2]/span[2]'.</msg>
+<status status="PASS" starttime="20240117 15:42:36.106" endtime="20240117 15:42:36.145"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[2]/span[2]</arg>
+</arguments>
+<assign>
+<var>${cinq}</var>
+</assign>
+<msg timestamp="20240117 15:42:36.163" level="INFO">${cinq} = 5</msg>
+<status status="PASS" starttime="20240117 15:42:36.145" endtime="20240117 15:42:36.163"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${cinq}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20240117 15:42:36.163" endtime="20240117 15:42:36.164"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[5]/span[4]</arg>
+</arguments>
+<msg timestamp="20240117 15:42:36.164" level="INFO">Clicking element 'xpath:/html/body/div[3]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/div/div[5]/span[4]'.</msg>
+<status status="PASS" starttime="20240117 15:42:36.164" endtime="20240117 15:42:36.204"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="sciOutPut"]</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20240117 15:42:36.223" level="INFO">${result} =  8</msg>
+<status status="PASS" starttime="20240117 15:42:36.204" endtime="20240117 15:42:36.223"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id="sciOutPut"]</arg>
+</arguments>
+<status status="PASS" starttime="20240117 15:42:36.224" endtime="20240117 15:42:36.339"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20240117 15:42:36.340" level="FAIL"> 8 != 8</msg>
+<status status="FAIL" starttime="20240117 15:42:36.340" endtime="20240117 15:42:36.340"></status>
+</kw>
+<status status="FAIL" starttime="20240117 15:42:33.008" endtime="20240117 15:42:36.341" critical="yes"> 8 != 8</status>
+</test>
+<status status="FAIL" starttime="20240117 15:42:32.855" endtime="20240117 15:42:36.341"></status>
+</suite>
+<status status="FAIL" starttime="20240117 15:42:32.852" endtime="20240117 15:42:36.343"></status>
+</suite>
+<status status="FAIL" starttime="20240117 15:42:32.837" endtime="20240117 15:42:36.344"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="RobotSelenium">RobotSelenium</stat>
+<stat pass="0" fail="1" id="s1-s1" name="CalculatriceAddition">RobotSelenium.CalculatriceAddition</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Calculate">RobotSelenium.CalculatriceAddition.Calculate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
